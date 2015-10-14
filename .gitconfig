@@ -68,6 +68,7 @@
 			git commit --amend -m \"$(git log -1 --pretty=%B)\n\nCloses #$1.\"; \
 		fi \
 	}; f"
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
 [apply]
 
@@ -160,3 +161,4 @@
 [user]
 	name = Kamjar Gerami
 	email = kami.gerami@gmail.com
+	signingkey = 0FBE9FFF
